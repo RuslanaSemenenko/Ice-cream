@@ -1,0 +1,205 @@
+.about {
+  background: $bgcolor-main;
+}
+
+.container-about {
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @include desktop() {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
+
+.about-page {
+  @include font(18px, 1.22, 700);
+  // font-weight: 700;
+  // font-size: 18px;
+  // line-height: 1.22;
+  text-align: center;
+  text-transform: uppercase;
+  color: $text-reverse-color;
+  padding-top: 61px;
+  padding-bottom: 12px;
+
+  @include tablet() {
+    @include font(22px, 1.73, 800);
+    // font-weight: 800;
+    // font-size: 22px;
+    // line-height: 1.73;
+    text-align: center;
+    letter-spacing: 0.04em;
+  }
+
+  @include desktop() {
+    font-family: 'Montserrat';
+    @include font(30px, 1.33, 800);
+    // font-weight: 800;
+    // font-size: 30px;
+    // line-height: 1.33;
+    // text-align: center;
+    letter-spacing: 0.04em;
+    color: #fcfcfc;
+  }
+}
+
+.about-title {
+  font-family: 'Seymour One';
+  @include font(30px, 1.26);
+  // font-weight: 400;
+  // font-size: 30px;
+  // line-height: 1.26;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $text-reverse-color;
+  margin-bottom: 32px;
+
+  @include tablet() {
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 1.26;
+    margin-bottom: 40px;
+  }
+
+  @include desktop() {
+    font-size: 36px;
+    line-height: 1.25;
+  }
+}
+
+.about-cow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
+
+  @include desktop() {
+    justify-content: flex-start;
+  }
+}
+
+.about__cow-container {
+  @media screen and (max-width: 340px) {
+    max-width: 278px;
+    height: auto;
+  }
+  @extend %flex-center;
+  margin-bottom: 40px;
+  width: 278px;
+  height: 278px;
+  border-radius: 50%;
+  background: linear-gradient(
+      0deg,
+      rgba(248, 210, 78, 0.7),
+      rgba(248, 210, 78, 0.7)
+    ),
+    #d9d9d9;
+  box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+
+  @include tablet() {
+    margin-right: 32px;
+    width: 330px;
+    height: 330px;
+  }
+  @include desktop() {
+    margin-right: 100px;
+    width: 500px;
+    height: 500px;
+  }
+}
+
+.about-cow__picture {
+  transform: translateY(22px);
+
+  @include tablet() {
+    transform: translateY(26px);
+  }
+
+  @include desktop() {
+    transform: translateY(39px);
+  }
+}
+
+.about__cow-image {
+  box-shadow: 0px 4.48583px 16.8218px rgba(153, 114, 23, 0.25);
+  border-radius: 50%;
+
+  @include tablet() {
+    width: 330px;
+    max-width: none;
+  }
+
+  @include desktop() {
+    width: 490px;
+  }
+}
+
+.about-text {
+  @extend %flex-center;
+  flex-direction: column;
+  width: 220px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.75;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $text-reverse-color;
+
+  @include tablet() {
+    width: 334px;
+    text-align: start;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  @include desktop() {
+    width: 463px;
+    font-size: 16px;
+    line-height: 1.75;
+  }
+}
+
+.about-paragraph {
+  margin-bottom: 4px;
+
+  @include tablet() {
+    margin-bottom: 8px;
+  }
+}
+
+.technology-info_paragraph--no-margin-bottom {
+  margin-bottom: 0;
+}
+
+.cow-button {
+  @extend %flex-center;
+
+  min-width: 152px;
+  color: $text-main-color;
+  background-color: $main-color;
+  transition: color $time-transition $function-transition,
+    background-color $time-transition $function-transition;
+
+  border-width: 0;
+  border-radius: 10px;
+
+  margin-top: 20px;
+  padding: 12px 34px;
+
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.29;
+
+  @include tablet() {
+    margin-top: 48px;
+  }
+}
+
+.about-icon {
+  margin-left: 14px;
+  stroke: currentColor;
+}
