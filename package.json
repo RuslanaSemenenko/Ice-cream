@@ -5,7 +5,7 @@
   "homepage": "https://ruslanasemenenko.github.io/Ice-cream/",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /go-it-team-project/"
+    "build": "parcel build src/*.html --public-url /Ice-cream/"
   },
   "repository": {
     "type": "git",
